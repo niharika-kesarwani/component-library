@@ -1,0 +1,103 @@
+/* HEADER */
+.header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "heading heading navlink navlink"
+    "search search search search";
+  align-items: center;
+  gap: 10px;
+}
+
+/* NavLink styling */
+.header .link {
+  padding: 5px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* Heading section */
+.header .heading {
+  grid-area: heading;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: bold;
+}
+
+.header .heading:hover {
+  cursor: pointer;
+}
+
+/* Search section */
+.header .search {
+  grid-area: search;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header .search input {
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.header .search button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0 10px;
+}
+
+.header .search button:hover {
+  cursor: pointer;
+}
+
+/* Navlink section */
+.header .navlink {
+  grid-area: navlink;
+  display: flex;
+  justify-content: end;
+}
+
+.header .navlink .link:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* HOME */
+.home_wrapper {
+  height: 100%;
+  max-height: 88vh;
+}
+
+.home {
+  background: pink;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  /* HEADER */
+  .header {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "heading search navlink";
+    margin: 10px;
+  }
+
+  .header .heading {
+    font-size: x-large;
+  }
+
+  .header .navlink {
+    gap: 5px;
+  }
+
+  .header .navlink .link {
+    padding: 5px 10px;
+  }
+
+  /* HOME */
+}
