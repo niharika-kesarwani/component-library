@@ -1,16 +1,16 @@
 import "./styles.css";
 import { NavLink, useLocation, Routes, Route } from "react-router-dom";
-import { Header } from "./pages/Home/Home";
-import { Home } from "./pages/Home/Home";
-import { Components } from "./pages/Components/Components";
-import { Avatar } from "./components/Avatar/Avatar";
-import { Card } from "./components/Card/Card";
-import { Alert } from "./components/Alert/Alert";
-import { Badge } from "./components/Badge/Badge";
-import { Button } from "./components/Button/Button";
-import { Heading } from "./components/Heading/Heading";
-import { Text } from "./components/Text/Text";
-import { Image } from "./components/Image/Image";
+import { Header, Home, Components } from "./pages";
+import {
+  Avatar,
+  Card,
+  Alert,
+  Badge,
+  Button,
+  Heading,
+  Text,
+  Image,
+} from "./components";
 
 const Sidebar = () => {
   const links = [
@@ -21,7 +21,7 @@ const Sidebar = () => {
     "card",
     "heading",
     "text",
-    "image"
+    "image",
   ];
 
   return (
@@ -56,7 +56,7 @@ export default function App() {
     { path: "/button", route: <Button /> },
     { path: "/heading", route: <Heading /> },
     { path: "/text", route: <Text /> },
-    { path: "/image", route: <Image /> }
+    { path: "/image", route: <Image /> },
   ];
 
   return (
