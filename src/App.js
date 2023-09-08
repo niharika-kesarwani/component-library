@@ -62,15 +62,14 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      <div>
+      <div className="content">
         {showSidebar && <Sidebar />}
-        <div>
-          <Routes>
-            {pathRoutes.map(({ path, route }, index) => (
-              <Route path={path} element={route} key={index}></Route>
-            ))}
-          </Routes>
-        </div>
+
+        <Routes>
+          {pathRoutes.map(({ path, route }, index) => (
+            <Route path={path} element={route} key={index}></Route>
+          ))}
+        </Routes>
       </div>
     </div>
   );

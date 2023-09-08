@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./Home.css";
 
 const Header = () => {
@@ -24,15 +24,17 @@ const Header = () => {
 };
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="home_wrapper">
-      <div className="home">
-        <div className="title">Your Unique Component Library</div>
-        <div className="description">
-          A collection of innovative components for modern web development.
-        </div>
-        <button>Get Started</button>
+      <div className="title">Your Unique Component Library</div>
+      <div className="description">
+        A collection of innovative components for modern web development.
       </div>
+      <button title="Get Started" onClick={() => navigate("/components")}>
+        Get Started
+      </button>
     </div>
   );
 };
