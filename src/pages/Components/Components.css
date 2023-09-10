@@ -1,0 +1,30 @@
+.components {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.components ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.components ul div {
+  background: var(--secondary-color);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.components ul div:hover {
+  cursor: pointer;
+  background: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+  .components ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -12,27 +12,57 @@ import {
   Image,
 } from "./components";
 
-const Sidebar = () => {
-  const links = [
-    "avatar",
-    "alert",
-    "badge",
-    "button",
-    "card",
-    "heading",
-    "text",
-    "image",
-  ];
+const componentRoutes = [
+  {
+    name: "Avatar",
+    path: "/avatar",
+    route: <Avatar />,
+  },
+  {
+    name: "Card",
+    path: "/card",
+    route: <Card />,
+  },
+  {
+    name: "Alert",
+    path: "/alert",
+    route: <Alert />,
+  },
+  {
+    name: "Badge",
+    path: "/badge",
+    route: <Badge />,
+  },
+  {
+    name: "Button",
+    path: "/button",
+    route: <Button />,
+  },
+  {
+    name: "Heading",
+    path: "/heading",
+    route: <Heading />,
+  },
+  {
+    name: "Text",
+    path: "/text",
+    route: <Text />,
+  },
+  {
+    name: "Image",
+    path: "/image",
+    route: <Image />,
+  },
+];
 
+const Sidebar = () => {
   return (
     <nav>
       <ul>
-        {links.map((link, index) => {
-          const route = `/${link}`;
-          const name = `${link[0].toUpperCase()}${link.slice(1)}`;
+        {componentRoutes.map(({ name, path }, index) => {
           return (
             <li key={index}>
-              <NavLink to={route}>{name}</NavLink>
+              <NavLink to={path}>{name}</NavLink>
             </li>
           );
         })}
@@ -47,16 +77,17 @@ export default function App() {
     location.pathname === "/" || location.pathname === "/components"
   );
   const pathRoutes = [
-    { path: "/", route: <Home /> },
-    { path: "/components", route: <Components /> },
-    { path: "/avatar", route: <Avatar /> },
-    { path: "/card", route: <Card /> },
-    { path: "/alert", route: <Alert /> },
-    { path: "/badge", route: <Badge /> },
-    { path: "/button", route: <Button /> },
-    { path: "/heading", route: <Heading /> },
-    { path: "/text", route: <Text /> },
-    { path: "/image", route: <Image /> },
+    {
+      name: "Home",
+      path: "/",
+      route: <Home />,
+    },
+    {
+      name: "Components",
+      path: "/components",
+      route: <Components />,
+    },
+    ...componentRoutes,
   ];
 
   return (
@@ -64,7 +95,6 @@ export default function App() {
       <Header />
       <div className="content">
         {showSidebar && <Sidebar />}
-
         <Routes>
           {pathRoutes.map(({ path, route }, index) => (
             <Route path={path} element={route} key={index}></Route>
@@ -74,3 +104,5 @@ export default function App() {
     </div>
   );
 }
+
+export { componentRoutes };
