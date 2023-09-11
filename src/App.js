@@ -56,14 +56,24 @@ const componentRoutes = [
 ];
 
 const Sidebar = () => {
+  const location = useLocation();
   return (
-    <nav>
+    <nav className="sidebar">
       <ul>
         {componentRoutes.map(({ name, path }, index) => {
           return (
-            <li key={index}>
-              <NavLink to={path}>{name}</NavLink>
-            </li>
+            <NavLink
+              key={index}
+              to={path}
+              title={name}
+              className={
+                location.pathname === path
+                  ? "navlink navlink_select"
+                  : "navlink"
+              }
+            >
+              {name}
+            </NavLink>
           );
         })}
       </ul>
@@ -93,7 +103,7 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      <div className="content">
+      <div className={showSidebar ? "content content_w_sb" : "content"}>
         {showSidebar && <Sidebar />}
         <Routes>
           {pathRoutes.map(({ path, route }, index) => (
