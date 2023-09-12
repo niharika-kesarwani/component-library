@@ -10,7 +10,7 @@ import {
   Heading,
   Text,
   Image,
-} from "./components";
+} from "./documentation";
 
 const componentRoutes = [
   {
@@ -59,24 +59,20 @@ const Sidebar = () => {
   const location = useLocation();
   return (
     <nav className="sidebar">
-      <ul>
-        {componentRoutes.map(({ name, path }, index) => {
-          return (
-            <NavLink
-              key={index}
-              to={path}
-              title={name}
-              className={
-                location.pathname === path
-                  ? "navlink navlink_select"
-                  : "navlink"
-              }
-            >
-              {name}
-            </NavLink>
-          );
-        })}
-      </ul>
+      {componentRoutes.map(({ name, path }, index) => {
+        return (
+          <NavLink
+            key={index}
+            to={path}
+            title={name}
+            className={
+              location.pathname === path ? "navlink navlink_select" : "navlink"
+            }
+          >
+            {name}
+          </NavLink>
+        );
+      })}
     </nav>
   );
 };

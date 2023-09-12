@@ -29,19 +29,20 @@ button {
 
 /* SIDEBAR */
 
-.sidebar ul {
+.sidebar {
   grid-area: sidebar;
   display: flex;
   flex-direction: column;
   gap: 5px;
   justify-content: center;
   align-items: center;
-  margin: 0 20px;
   list-style: none;
-  width: 100%;
+  background: #fff;
+  position: fixed;
+  width: calc(100% / 3);
 }
 
-.sidebar ul .navlink {
+.sidebar .navlink {
   padding: 10px;
   width: 100%;
   text-align: left;
@@ -50,13 +51,13 @@ button {
   color: var(--primary-color);
 }
 
-.sidebar ul .navlink_select {
+.sidebar .navlink_select {
   background: var(--primary-color);
   color: #fff;
   font-weight: bold;
 }
 
-.sidebar ul .navlink:hover {
+.sidebar .navlink:hover {
   cursor: pointer;
   background: var(--primary-color);
   font-weight: bold;
@@ -69,11 +70,9 @@ button {
   font-family: sans-serif;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   grid-template-areas:
     "header"
-    "content"
-    "content"
     "content"
     "content"
     "content"
@@ -81,6 +80,7 @@ button {
     "content";
   height: 100vh;
   margin: 0 auto;
+  gap: 10px;
 }
 
 .content {
@@ -108,7 +108,26 @@ button {
     font-size: 1rem;
   }
 
+  /* SIDEBAR */
+
+  .sidebar {
+    width: 20%;
+  }
+
   /* APP */
+
+  .App {
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+      "header"
+      "content"
+      "content"
+      "content"
+      "content"
+      "content"
+      "content"
+      "content";
+  }
 
   .content_w_sb {
     grid-template-columns: repeat(5, 1fr);
