@@ -1,3 +1,4 @@
+import GitHubIcon from "@mui/icons-material/GitHub";
 import WarningRoundedIcon from "@mui/icons-material/WarningRounded";
 import CheckCircleOutlineRoundedIcon from "@mui/icons-material/CheckCircleOutlineRounded";
 import WarningAmberRoundedIcon from "@mui/icons-material/WarningAmberRounded";
@@ -10,6 +11,7 @@ import AddSharpIcon from "@mui/icons-material/AddSharp";
 import CloseSharpIcon from "@mui/icons-material/CloseSharp";
 
 export {
+  GitHubIcon,
   WarningRoundedIcon,
   CheckCircleOutlineRoundedIcon,
   WarningAmberRoundedIcon,

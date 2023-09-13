@@ -4,7 +4,8 @@
   gap: 20px;
   border: 1px solid lightgray;
   padding: 10px 15px 40px;
-  min-width: 350px;
+  min-width: 300px;
+  max-width: 100vw;
 }
 
 .card_with_badge .card_with_badge_badge {
@@ -22,6 +23,7 @@
 
 .card_with_text_overlay img {
   padding: 15px;
+  width: 100%;
 }
 
 .card_with_text_overlay .overlay {
@@ -68,4 +70,10 @@
 .card_component {
   display: flex;
   gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .card_with_badge {
+    min-width: 350px;
+  }
 }

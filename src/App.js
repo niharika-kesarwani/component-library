@@ -74,13 +74,6 @@ const Sidebar = () => {
           </NavLink>
         );
       })}
-      <NavLink
-        className="project_source_code"
-        to="https://github.com/niharika-kesarwani/component-library/"
-        target="_blank"
-      >
-        View Source Code
-      </NavLink>
     </nav>
   );
 };

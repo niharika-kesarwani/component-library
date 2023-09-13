@@ -1,5 +1,5 @@
 import SyntaxHighLighter from "react-syntax-highlighter";
-import { stackoverflowDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { vs2015 } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import "./CodeBlock.css";
 
 const CodeBlock = ({ headerText, codeText }) => {
@@ -9,8 +9,13 @@ const CodeBlock = ({ headerText, codeText }) => {
       <h2>How to use {codeBlockText} component?</h2>
       <SyntaxHighLighter
         language="jsx"
-        style={stackoverflowDark}
-        customStyle={{ padding: "20px 40px", lineHeight: "25px" }}
+        style={vs2015}
+        customStyle={{
+          padding: "20px",
+          lineHeight: "25px",
+          width: "100%",
+        }}
+        wrapLongLines
       >
         {codeText}
       </SyntaxHighLighter>

@@ -22,5 +22,12 @@
 
 .badge_component {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .badge_component {
+    gap: 20px;
+  }
 }

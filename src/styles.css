@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 :root {
   --primary-color: #a855f7;
   --secondary-color: #c4b5fd;
@@ -32,19 +34,17 @@ button {
 .sidebar {
   grid-area: sidebar;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 5px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: start;
   list-style: none;
   background: #fff;
-  position: fixed;
-  width: calc(100% / 3);
+  margin-bottom: 20px;
 }
 
 .sidebar .navlink {
   padding: 10px;
-  width: 100%;
   text-align: left;
   border-radius: 5px;
   text-decoration: none;
@@ -62,21 +62,6 @@ button {
   background: var(--primary-color);
   font-weight: bold;
   color: #fff;
-}
-
-.sidebar .project_source_code {
-  padding: 10px;
-  margin-top: 20px;
-  background: var(--secondary-color);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.sidebar .project_source_code:hover {
-  cursor: pointer;
-  background: var(--primary-color);
 }
 
 /* APP */
@@ -105,9 +90,9 @@ button {
 
 .content_w_sb {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: "sidebar description description";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "sidebar" "description" "description";
 }
 
 @media (min-width: 768px) {
@@ -126,7 +111,20 @@ button {
   /* SIDEBAR */
 
   .sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: start;
+    list-style: none;
+    background: #fff;
+    position: fixed;
     width: 20%;
+  }
+
+  .sidebar .navlink {
+    width: 100%;
   }
 
   /* APP */
@@ -146,6 +144,7 @@ button {
 
   .content_w_sb {
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
     grid-template-areas: "sidebar description description description description";
   }
 }

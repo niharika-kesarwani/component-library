@@ -13,6 +13,7 @@
   position: fixed;
   background: #fff;
   width: 100%;
+  max-width: 100vw;
 }
 
 /* NavLink styling */
@@ -64,6 +65,12 @@
   grid-area: navlink;
   display: flex;
   justify-content: end;
+}
+
+.header .navlink .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header .navlink .link:hover {

@@ -1,12 +1,12 @@
 .component_wrapper {
   grid-area: description;
   width: 100%;
+  max-width: calc(100vw - 15px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
-  padding: 0 10px;
   text-align: left;
 }
 

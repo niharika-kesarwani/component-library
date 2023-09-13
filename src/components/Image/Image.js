@@ -1,7 +1,7 @@
 import "./Image.css";
 
 const Image = ({ srcImg, text }) => {
-  return <img src={srcImg} alt={text} />;
+  return <img src={srcImg} alt={text} className="image" />;
 };
 
 const ImageComponent = () => {

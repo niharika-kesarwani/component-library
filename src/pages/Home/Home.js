@@ -2,6 +2,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 import { componentRoutes } from "./../../App";
+import { GitHubIcon } from "./../../icons";
 import "./Home.css";
 
 const Header = () => {
@@ -33,6 +34,15 @@ const Header = () => {
         </NavLink>
         <NavLink to="/components" className="link" title="Components">
           Components
+        </NavLink>
+
+        <NavLink
+          to="https://github.com/niharika-kesarwani/component-library/"
+          target="_blank"
+          className="link"
+          title="GitHub"
+        >
+          <GitHubIcon />
         </NavLink>
       </div>
       <div className="search">
