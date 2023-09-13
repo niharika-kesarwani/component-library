@@ -1,0 +1,5 @@
+.text_component {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

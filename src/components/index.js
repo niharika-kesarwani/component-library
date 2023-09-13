@@ -12,7 +12,7 @@ import {
 import { Card } from "./Card/Card";
 import { HeadingComponents, headingCodeText } from "./Heading/Heading";
 import { Image } from "./Image/Image";
-import { Text } from "./Text/Text";
+import { TextComponents, textCodeText } from "./Text/Text";
 
 export {
   AlertComponents,
@@ -31,5 +31,6 @@ export {
   HeadingComponents,
   headingCodeText,
   Image,
-  Text,
+  TextComponents,
+  textCodeText,
 };
