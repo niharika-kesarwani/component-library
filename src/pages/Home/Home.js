@@ -38,8 +38,9 @@ const Header = () => {
       <div className="search">
         <input
           placeholder="Search for components..."
-          onChange={inputHandler}
           value={search}
+          onChange={inputHandler}
+          onKeyDown={(e) => e.key === "Enter" && buttonHandler()}
         />
         <button title="Search" onClick={buttonHandler}>
           Search
