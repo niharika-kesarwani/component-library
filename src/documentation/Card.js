@@ -10,6 +10,8 @@ import {
   textOnlyCardCodeText,
   VerticalCardComponent,
   verticalCardCodeText,
+  HorizontalCardComponent,
+  horizontalCardCodeText,
 } from "./../components";
 import "./index.css";
 
@@ -57,6 +59,8 @@ const Card = () => {
       <ComponentWrapper
         headerText="HorizontalCard"
         descriptionText={cardDescription}
+        components={<HorizontalCardComponent />}
+        codeText={horizontalCardCodeText}
       />
 
       <ComponentWrapper

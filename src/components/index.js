@@ -26,6 +26,8 @@ import {
   textOnlyCardCodeText,
   VerticalCardComponent,
   verticalCardCodeText,
+  HorizontalCardComponent,
+  horizontalCardCodeText,
 } from "./Card/Card";
 import { Heading, HeadingComponents, headingCodeText } from "./Heading/Heading";
 import {
@@ -62,6 +64,8 @@ export {
   textOnlyCardCodeText,
   VerticalCardComponent,
   verticalCardCodeText,
+  HorizontalCardComponent,
+  horizontalCardCodeText,
   Heading,
   HeadingComponents,
   headingCodeText,
