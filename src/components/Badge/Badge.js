@@ -1,7 +1,10 @@
-import { MailIcon } from "./../../icons";
+import {
+  BadgeWithIconsComponents,
+  badgeWithIconsCodeText,
+} from "./BadgeWithIcons";
 import "./Badge.css";
 
-const Badge = ({ badgeContent, color, children }) => {
+const Badge = ({ color, children }) => {
   let badgeColor;
   switch (color) {
     case "primary":
@@ -30,11 +33,14 @@ const Badge = ({ badgeContent, color, children }) => {
       break;
   }
   return (
-    <div className="badge">
-      <div>{children}</div>
-      <div className="badge_content" style={{ backgroundColor: badgeColor }}>
-        {badgeContent}
-      </div>
+    <div
+      className="badge"
+      style={{
+        backgroundColor: badgeColor,
+        color: color === "light" ? "#000" : null,
+      }}
+    >
+      {children}
     </div>
   );
 };
@@ -42,19 +48,24 @@ const Badge = ({ badgeContent, color, children }) => {
 const BadgeComponents = () => {
   return (
     <div className="badge_component">
-      <Badge badgeContent={4} color="primary">
-        <MailIcon color="action" />
-      </Badge>
-      <Badge badgeContent={9} color="secondary">
-        <MailIcon color="action" />
-      </Badge>
-      <Badge badgeContent={7} color="success">
-        <MailIcon color="action" />
-      </Badge>
+      <Badge color="primary">Primary</Badge>
+      <Badge color="secondary">Secondary</Badge>
+      <Badge color="success">Success</Badge>
+      <Badge color="danger">Danger</Badge>
+      <Badge color="warning">Warning</Badge>
+      <Badge color="info">Info</Badge>
+      <Badge color="light">Light</Badge>
+      <Badge color="dark">Dark</Badge>
     </div>
   );
 };
 
-const badgeCodeText = `<Badge badgeContent={4} color="primary">\n\t<MailIcon color="action" />\n</Badge>\n<Badge badgeContent={9} color="secondary">\n\t<MailIcon color="action" />\n</Badge>\n<Badge badgeContent={7} color="success">\n\t<MailIcon color="action" />\n</Badge>`;
+const badgeCodeText = `<Badge color="primary">Primary</Badge>\n<Badge color="secondary">Secondary /></Badge>\n<Badge color="success">Success</Badge>\n<Badge color="danger">Danger /></Badge>\n<Badge color="warning">Warning /></Badge>\n<Badge color="info">Info /></Badge>\n<Badge color="light">Light /></Badge>\n<Badge color="dark">Dark /></Badge>`;
 
-export { BadgeComponents, badgeCodeText };
+export {
+  Badge,
+  BadgeComponents,
+  badgeCodeText,
+  BadgeWithIconsComponents,
+  badgeWithIconsCodeText,
+};

@@ -1,4 +1,5 @@
 import { ComponentWrapper } from "./../documentation";
+import { CardWithBadgeComponent, cardWithBadgeCodeText } from "./../components";
 import "./index.css";
 
 const Card = () => {
@@ -10,6 +11,8 @@ const Card = () => {
       <ComponentWrapper
         headerText="CardWithBadge"
         descriptionText={cardDescription}
+        components={<CardWithBadgeComponent />}
+        codeText={cardWithBadgeCodeText}
       />
 
       <ComponentWrapper

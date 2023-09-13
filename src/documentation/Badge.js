@@ -1,5 +1,10 @@
 import { ComponentWrapper } from "./../documentation";
-import { BadgeComponents, badgeCodeText } from "./../components";
+import {
+  BadgeComponents,
+  badgeCodeText,
+  BadgeWithIconsComponents,
+  badgeWithIconsCodeText,
+} from "./../components";
 import "./index.css";
 
 const Badge = () => {
@@ -13,6 +18,12 @@ const Badge = () => {
         descriptionText={badgeDescription}
         components={<BadgeComponents />}
         codeText={badgeCodeText}
+      />
+      <ComponentWrapper
+        headerText="BadgeWithIcons"
+        descriptionText={badgeDescription}
+        components={<BadgeWithIconsComponents />}
+        codeText={badgeWithIconsCodeText}
       />
     </div>
   );

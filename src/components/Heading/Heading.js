@@ -32,4 +32,4 @@ const HeadingComponents = () => {
 
 const headingCodeText = `<Heading level="h1">h1: Lorem ipsum</Heading>\n<Heading level="h2">h2: What is Lorem Ipsum?</Heading>\n<Heading level="h3">h3: The standard Lorem Ipsum passage.</Heading>\n<Heading level="h4">h4: The standard Lorem Ipsum passage.</Heading>\n<Heading level="h5">h5: The standard Lorem Ipsum passage.</Heading>\n<Heading level="h6">h6: The smallest headline of the page</Heading>`;
 
-export { HeadingComponents, headingCodeText };
+export { Heading, HeadingComponents, headingCodeText };

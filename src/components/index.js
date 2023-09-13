@@ -1,6 +1,12 @@
 import { AlertComponents, alertCodeText } from "./Alert/Alert";
 import { AvatarComponents, avatarCodeText } from "./Avatar/Avatar";
-import { BadgeComponents, badgeCodeText } from "./Badge/Badge";
+import {
+  Badge,
+  BadgeComponents,
+  badgeCodeText,
+  BadgeWithIconsComponents,
+  badgeWithIconsCodeText,
+} from "./Badge/Badge";
 import {
   ButtonComponents,
   buttonCodeText,
@@ -9,36 +15,42 @@ import {
   FloatingActionButtonComponents,
   floatingActionButtonCodeText,
 } from "./Button/Button";
-import { Card } from "./Card/Card";
-import { HeadingComponents, headingCodeText } from "./Heading/Heading";
+import { CardWithBadgeComponent, cardWithBadgeCodeText } from "./Card/Card";
+import { Heading, HeadingComponents, headingCodeText } from "./Heading/Heading";
 import {
   ImageComponent,
   imageCodeText,
   RoundImageComponent,
   roundImageCodeText,
 } from "./Image/Image";
-import { TextComponents, textCodeText } from "./Text/Text";
+import { Text, TextComponents, textCodeText } from "./Text/Text";
 
 export {
   AlertComponents,
   alertCodeText,
   AvatarComponents,
   avatarCodeText,
+  Badge,
   BadgeComponents,
   badgeCodeText,
+  BadgeWithIconsComponents,
+  badgeWithIconsCodeText,
   ButtonComponents,
   buttonCodeText,
   IconButtonComponents,
   iconButtonCodeText,
   FloatingActionButtonComponents,
   floatingActionButtonCodeText,
-  Card,
+  CardWithBadgeComponent,
+  cardWithBadgeCodeText,
+  Heading,
   HeadingComponents,
   headingCodeText,
   ImageComponent,
   imageCodeText,
   RoundImageComponent,
   roundImageCodeText,
+  Text,
   TextComponents,
   textCodeText,
 };

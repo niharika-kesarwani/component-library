@@ -1,8 +1,14 @@
 .badge {
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.badge_with_icons {
   position: relative;
 }
 
-.badge .badge_content {
+.badge_with_icons .badge_with_icons_content {
   position: absolute;
   top: -10px;
   right: -10px;

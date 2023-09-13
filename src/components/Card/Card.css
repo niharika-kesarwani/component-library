@@ -1,0 +1,17 @@
+.card_with_badge {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid lightgray;
+  padding: 10px 15px 40px;
+  min-width: 350px;
+}
+
+.card_with_badge .card_with_badge_badge {
+  align-self: flex-end;
+}
+
+.card_with_badge_component {
+  display: flex;
+  gap: 10px;
+}

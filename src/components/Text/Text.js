@@ -56,4 +56,4 @@ const TextComponents = () => {
 
 const textCodeText = `<Text size="6xl">(6xl) In love with React & Next</Text>\n<Text size="5xl">(5xl) In love with React & Next</Text>\n<Text size="4xl">(4xl) In love with React & Next</Text>\n<Text size="3xl">(3xl) In love with React & Next</Text>\n<Text size="2xl">(2xl) In love with React & Next</Text>\n<Text size="xl">(xl) In love with React & Next</Text\n<Text size="lg">(lg) In love with React & Next</Text>\n<Text size="md">(md) In love with React & Next</Text>\n<Text size="sm">(sm) In love with React & Next</Text\n<Text size="xs">(xs) In love with React & Next</Text>`;
 
-export { TextComponents, textCodeText };
+export { Text, TextComponents, textCodeText };
