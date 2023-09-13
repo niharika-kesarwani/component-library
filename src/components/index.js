@@ -15,7 +15,12 @@ import {
   FloatingActionButtonComponents,
   floatingActionButtonCodeText,
 } from "./Button/Button";
-import { CardWithBadgeComponent, cardWithBadgeCodeText } from "./Card/Card";
+import {
+  CardWithBadgeComponent,
+  cardWithBadgeCodeText,
+  CardWithDismissComponent,
+  cardWithDismissCodeText,
+} from "./Card/Card";
 import { Heading, HeadingComponents, headingCodeText } from "./Heading/Heading";
 import {
   ImageComponent,
@@ -43,6 +48,8 @@ export {
   floatingActionButtonCodeText,
   CardWithBadgeComponent,
   cardWithBadgeCodeText,
+  CardWithDismissComponent,
+  cardWithDismissCodeText,
   Heading,
   HeadingComponents,
   headingCodeText,

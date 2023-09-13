@@ -11,7 +11,11 @@
   align-self: flex-end;
 }
 
-.card_with_badge_component {
+.card_with_dismiss_dismiss:hover {
+  cursor: pointer;
+}
+
+.card_component {
   display: flex;
   gap: 10px;
 }

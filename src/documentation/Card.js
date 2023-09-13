@@ -1,5 +1,10 @@
 import { ComponentWrapper } from "./../documentation";
-import { CardWithBadgeComponent, cardWithBadgeCodeText } from "./../components";
+import {
+  CardWithBadgeComponent,
+  cardWithBadgeCodeText,
+  CardWithDismissComponent,
+  cardWithDismissCodeText,
+} from "./../components";
 import "./index.css";
 
 const Card = () => {
@@ -18,6 +23,8 @@ const Card = () => {
       <ComponentWrapper
         headerText="CardWithDismiss"
         descriptionText={cardDescription}
+        components={<CardWithDismissComponent />}
+        codeText={cardWithDismissCodeText}
       />
 
       <ComponentWrapper

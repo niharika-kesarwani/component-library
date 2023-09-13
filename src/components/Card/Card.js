@@ -1,4 +1,8 @@
-import { Badge, Heading, Text } from "./../index";
+import { Badge, Heading, Text } from "./../../components";
+import {
+  CardWithDismissComponent,
+  cardWithDismissCodeText,
+} from "./CardWithDismiss";
 import "./Card.css";
 
 const CardWithBadge = ({ title, description, badgeText, badgeColor }) => {
@@ -15,7 +19,7 @@ const CardWithBadge = ({ title, description, badgeText, badgeColor }) => {
 
 const CardWithBadgeComponent = () => {
   return (
-    <div className="card_with_badge_component">
+    <div className="card_component">
       <CardWithBadge
         title="Title"
         description="Card content with a badge."
@@ -28,4 +32,9 @@ const CardWithBadgeComponent = () => {
 
 const cardWithBadgeCodeText = `<CardWithBadge\n\ttitle="Title"\n\tdescription="Card content with a badge."\n\tbadgeText="New"\n\tbadgeColor="danger"\n/>`;
 
-export { CardWithBadgeComponent, cardWithBadgeCodeText };
+export {
+  CardWithBadgeComponent,
+  cardWithBadgeCodeText,
+  CardWithDismissComponent,
+  cardWithDismissCodeText,
+};

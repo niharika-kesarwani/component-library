@@ -7,6 +7,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import SearchIcon from "@mui/icons-material/Search";
 import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
 import AddSharpIcon from "@mui/icons-material/AddSharp";
+import CloseSharpIcon from "@mui/icons-material/CloseSharp";
 
 export {
   WarningRoundedIcon,
@@ -18,4 +19,5 @@ export {
   SearchIcon,
   EditOutlinedIcon,
   AddSharpIcon,
+  CloseSharpIcon,
 };
