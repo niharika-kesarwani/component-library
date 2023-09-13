@@ -2,31 +2,26 @@ import "./styles.css";
 import { NavLink, useLocation, Routes, Route } from "react-router-dom";
 import { Header, Home, Components } from "./pages";
 import {
-  Avatar,
-  Card,
   Alert,
+  Avatar,
   Badge,
   Button,
+  Card,
   Heading,
-  Text,
   Image,
+  Text,
 } from "./documentation";
 
 const componentRoutes = [
   {
-    name: "Avatar",
-    path: "/avatar",
-    route: <Avatar />,
-  },
-  {
-    name: "Card",
-    path: "/card",
-    route: <Card />,
-  },
-  {
     name: "Alert",
     path: "/alert",
     route: <Alert />,
+  },
+  {
+    name: "Avatar",
+    path: "/avatar",
+    route: <Avatar />,
   },
   {
     name: "Badge",
@@ -39,19 +34,24 @@ const componentRoutes = [
     route: <Button />,
   },
   {
+    name: "Card",
+    path: "/card",
+    route: <Card />,
+  },
+  {
     name: "Heading",
     path: "/heading",
     route: <Heading />,
   },
   {
-    name: "Text",
-    path: "/text",
-    route: <Text />,
-  },
-  {
     name: "Image",
     path: "/image",
     route: <Image />,
+  },
+  {
+    name: "Text",
+    path: "/text",
+    route: <Text />,
   },
 ];
 

@@ -10,7 +10,7 @@ const CodeBlock = ({ headerText, codeText }) => {
       <SyntaxHighLighter
         language="jsx"
         style={stackoverflowDark}
-        customStyle={{ padding: "20px 40px", lineHeight: "20px" }}
+        customStyle={{ padding: "20px 40px", lineHeight: "25px" }}
       >
         {codeText}
       </SyntaxHighLighter>
