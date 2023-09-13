@@ -1,6 +1,6 @@
 import { AlertComponents, alertCodeText } from "./Alert/Alert";
 import { AvatarComponents, avatarCodeText } from "./Avatar/Avatar";
-import { Badge } from "./Badge/Badge";
+import { BadgeComponents, badgeCodeText } from "./Badge/Badge";
 import { Button } from "./Button/Button";
 import { Card } from "./Card/Card";
 import { Heading } from "./Heading/Heading";
@@ -12,7 +12,8 @@ export {
   alertCodeText,
   AvatarComponents,
   avatarCodeText,
-  Badge,
+  BadgeComponents,
+  badgeCodeText,
   Button,
   Card,
   Heading,
