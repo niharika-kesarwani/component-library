@@ -1,32 +1,46 @@
-import { Header } from "./Header/Header";
-import { Description } from "./Description/Description";
+import { ComponentWrapper } from "./../documentation";
+import "./index.css";
 
 const Card = () => {
   const cardDescription =
     "Card is a flexible component used to group and display content in a clear and concise format.";
 
   return (
-    <div className="body">
-      <Header headerText="CardWithBadge" />
-      <Description descriptionText={cardDescription} />
+    <div className="component_body">
+      <ComponentWrapper
+        headerText="CardWithBadge"
+        descriptionText={cardDescription}
+      />
 
-      <Header headerText="CardWithDismiss" />
-      <Description descriptionText={cardDescription} />
+      <ComponentWrapper
+        headerText="CardWithDismiss"
+        descriptionText={cardDescription}
+      />
 
-      <Header headerText="CardWithTextOverlay" />
-      <Description descriptionText={cardDescription} />
+      <ComponentWrapper
+        headerText="CardWithTextOverlay"
+        descriptionText={cardDescription}
+      />
 
-      <Header headerText="TextOnlyCard" />
-      <Description descriptionText={cardDescription} />
+      <ComponentWrapper
+        headerText="TextOnlyCard"
+        descriptionText={cardDescription}
+      />
 
-      <Header headerText="VerticalCard" />
-      <Description descriptionText={cardDescription} />
+      <ComponentWrapper
+        headerText="VerticalCard"
+        descriptionText={cardDescription}
+      />
 
-      <Header headerText="HorizontalCard" />
-      <Description descriptionText={cardDescription} />
+      <ComponentWrapper
+        headerText="HorizontalCard"
+        descriptionText={cardDescription}
+      />
 
-      <Header headerText="CardWithShadow" />
-      <Description descriptionText={cardDescription} />
+      <ComponentWrapper
+        headerText="CardWithShadow"
+        descriptionText={cardDescription}
+      />
     </div>
   );
 };

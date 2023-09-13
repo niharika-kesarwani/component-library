@@ -1,12 +1,11 @@
-import { Description } from "./Description/Description";
-import { Header } from "./Header/Header";
+import { ComponentWrapper } from "./../documentation";
 
 const Heading = () => {
   return (
-    <div className="body">
-      <Header headerText="Heading" />
-      <Description descriptionText="Heading is used to render semantic HTML heading elements." />
-    </div>
+    <ComponentWrapper
+      headerText="Heading"
+      descriptionText="Heading is used to render semantic HTML heading elements."
+    />
   );
 };
 

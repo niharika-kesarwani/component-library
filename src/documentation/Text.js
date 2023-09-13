@@ -1,12 +1,11 @@
-import { Description } from "./Description/Description";
-import { Header } from "./Header/Header";
+import { ComponentWrapper } from "./../documentation";
 
 const Text = () => {
   return (
-    <div className="body">
-      <Header headerText="Text" />
-      <Description descriptionText="Text is used to render text and paragraphs within an interface." />
-    </div>
+    <ComponentWrapper
+      headerText="Text"
+      descriptionText="Text is used to render text and paragraphs within an interface."
+    />
   );
 };
 
