@@ -10,7 +10,7 @@ import {
   floatingActionButtonCodeText,
 } from "./Button/Button";
 import { Card } from "./Card/Card";
-import { Heading } from "./Heading/Heading";
+import { HeadingComponents, headingCodeText } from "./Heading/Heading";
 import { Image } from "./Image/Image";
 import { Text } from "./Text/Text";
 
@@ -28,7 +28,8 @@ export {
   FloatingActionButtonComponents,
   floatingActionButtonCodeText,
   Card,
-  Heading,
+  HeadingComponents,
+  headingCodeText,
   Image,
   Text,
 };
