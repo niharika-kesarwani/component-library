@@ -1,6 +1,6 @@
 import { Alert } from "./Alert/Alert";
 import { AlertIcon } from "./Alert/AlertIcon";
-import { Avatar } from "./Avatar/Avatar";
+import { AvatarComponents, avatarCodeText } from "./Avatar/Avatar";
 import { Badge } from "./Badge/Badge";
 import { Button } from "./Button/Button";
 import { FloatingActionButton } from "./Button/FloatingActionButton";
@@ -13,7 +13,8 @@ import { Text } from "./Text/Text";
 export {
   Alert,
   AlertIcon,
-  Avatar,
+  AvatarComponents,
+  avatarCodeText,
   Badge,
   Button,
   FloatingActionButton,
