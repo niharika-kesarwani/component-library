@@ -1,7 +1,14 @@
 import { AlertComponents, alertCodeText } from "./Alert/Alert";
 import { AvatarComponents, avatarCodeText } from "./Avatar/Avatar";
 import { BadgeComponents, badgeCodeText } from "./Badge/Badge";
-import { Button } from "./Button/Button";
+import {
+  ButtonComponents,
+  buttonCodeText,
+  IconButtonComponents,
+  iconButtonCodeText,
+  FloatingActionButtonComponents,
+  floatingActionButtonCodeText,
+} from "./Button/Button";
 import { Card } from "./Card/Card";
 import { Heading } from "./Heading/Heading";
 import { Image } from "./Image/Image";
@@ -14,7 +21,12 @@ export {
   avatarCodeText,
   BadgeComponents,
   badgeCodeText,
-  Button,
+  ButtonComponents,
+  buttonCodeText,
+  IconButtonComponents,
+  iconButtonCodeText,
+  FloatingActionButtonComponents,
+  floatingActionButtonCodeText,
   Card,
   Heading,
   Image,

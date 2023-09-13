@@ -1,0 +1,39 @@
+.button_component button {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background: none;
+  color: var(--primary-color);
+}
+
+.button_component button:hover {
+  cursor: pointer;
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.primary_button {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.primary_button:hover {
+  background: var(--primary-color);
+}
+
+.secondary_button {
+  border: 1px solid var(--secondary-color);
+}
+
+.secondary_button:hover {
+  outline: 1px solid var(--primary-color);
+}
+
+.link_button {
+  text-decoration: underline;
+}
+
+.button_component {
+  display: flex;
+  gap: 10px;
+}

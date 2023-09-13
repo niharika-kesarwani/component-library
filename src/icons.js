@@ -3,6 +3,10 @@ import CheckCircleOutlineRoundedIcon from "@mui/icons-material/CheckCircleOutlin
 import WarningAmberRoundedIcon from "@mui/icons-material/WarningAmberRounded";
 import InfoRoundedIcon from "@mui/icons-material/InfoRounded";
 import MailIcon from "@mui/icons-material/Mail";
+import DeleteIcon from "@mui/icons-material/Delete";
+import SearchIcon from "@mui/icons-material/Search";
+import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
+import AddSharpIcon from "@mui/icons-material/AddSharp";
 
 export {
   WarningRoundedIcon,
@@ -10,4 +14,8 @@ export {
   WarningAmberRoundedIcon,
   InfoRoundedIcon,
   MailIcon,
+  DeleteIcon,
+  SearchIcon,
+  EditOutlinedIcon,
+  AddSharpIcon,
 };
