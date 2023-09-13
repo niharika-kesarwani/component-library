@@ -20,6 +20,8 @@ import {
   cardWithBadgeCodeText,
   CardWithDismissComponent,
   cardWithDismissCodeText,
+  CardWithTextOverlayComponent,
+  cardWithTextOverlayCodeText,
 } from "./Card/Card";
 import { Heading, HeadingComponents, headingCodeText } from "./Heading/Heading";
 import {
@@ -50,6 +52,8 @@ export {
   cardWithBadgeCodeText,
   CardWithDismissComponent,
   cardWithDismissCodeText,
+  CardWithTextOverlayComponent,
+  cardWithTextOverlayCodeText,
   Heading,
   HeadingComponents,
   headingCodeText,

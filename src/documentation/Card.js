@@ -4,6 +4,8 @@ import {
   cardWithBadgeCodeText,
   CardWithDismissComponent,
   cardWithDismissCodeText,
+  CardWithTextOverlayComponent,
+  cardWithTextOverlayCodeText,
 } from "./../components";
 import "./index.css";
 
@@ -30,6 +32,8 @@ const Card = () => {
       <ComponentWrapper
         headerText="CardWithTextOverlay"
         descriptionText={cardDescription}
+        components={<CardWithTextOverlayComponent />}
+        codeText={cardWithTextOverlayCodeText}
       />
 
       <ComponentWrapper

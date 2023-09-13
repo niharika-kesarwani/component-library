@@ -3,6 +3,10 @@ import {
   CardWithDismissComponent,
   cardWithDismissCodeText,
 } from "./CardWithDismiss";
+import {
+  CardWithTextOverlayComponent,
+  cardWithTextOverlayCodeText,
+} from "./CardWithTextOverlay";
 import "./Card.css";
 
 const CardWithBadge = ({ title, description, badgeText, badgeColor }) => {
@@ -37,4 +41,6 @@ export {
   cardWithBadgeCodeText,
   CardWithDismissComponent,
   cardWithDismissCodeText,
+  CardWithTextOverlayComponent,
+  cardWithTextOverlayCodeText,
 };
