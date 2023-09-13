@@ -8,6 +8,8 @@ import {
   cardWithTextOverlayCodeText,
   TextOnlyCardComponent,
   textOnlyCardCodeText,
+  VerticalCardComponent,
+  verticalCardCodeText,
 } from "./../components";
 import "./index.css";
 
@@ -48,6 +50,8 @@ const Card = () => {
       <ComponentWrapper
         headerText="VerticalCard"
         descriptionText={cardDescription}
+        components={<VerticalCardComponent />}
+        codeText={verticalCardCodeText}
       />
 
       <ComponentWrapper

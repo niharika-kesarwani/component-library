@@ -44,6 +44,22 @@
   min-width: 300px;
 }
 
+.vertical_card {
+  border: 1px solid lightgray;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vertical_card .vertical_card_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+
 .card_component {
   display: flex;
   gap: 10px;
