@@ -1,7 +1,27 @@
 import { NavLink, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { toast } from "react-hot-toast";
+import { componentRoutes } from "./../../App";
 import "./Home.css";
 
 const Header = () => {
+  const [search, setSearch] = useState("");
+  const navigate = useNavigate();
+
+  const inputHandler = (e) => setSearch(e.target.value);
+
+  const buttonHandler = () => {
+    setSearch("");
+    const searchedRoute = componentRoutes.find(({ name }) =>
+      name.toLowerCase().includes(search.toLowerCase())
+    );
+    if (searchedRoute) {
+      navigate(searchedRoute.path);
+    } else {
+      toast.error("Component not found!");
+    }
+  };
+
   return (
     <div className="header">
       <NavLink to="/" className="link heading" title="CSS Library">
@@ -16,8 +36,14 @@ const Header = () => {
         </NavLink>
       </div>
       <div className="search">
-        <input placeholder="Search for components..." />
-        <button title="Search">Search</button>
+        <input
+          placeholder="Search for components..."
+          onChange={inputHandler}
+          value={search}
+        />
+        <button title="Search" onClick={buttonHandler}>
+          Search
+        </button>
       </div>
     </div>
   );

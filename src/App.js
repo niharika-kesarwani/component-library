@@ -1,5 +1,6 @@
 import "./styles.css";
 import { NavLink, useLocation, Routes, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 import { Header, Home, Components } from "./pages";
 import {
   Alert,
@@ -98,6 +99,7 @@ export default function App() {
 
   return (
     <div className="App">
+      <Toaster position="top-right" />
       <Header />
       <div className={showSidebar ? "content content_w_sb" : "content"}>
         {showSidebar && <Sidebar />}

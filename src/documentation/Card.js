@@ -62,11 +62,6 @@ const Card = () => {
         components={<HorizontalCardComponent />}
         codeText={horizontalCardCodeText}
       />
-
-      <ComponentWrapper
-        headerText="CardWithShadow"
-        descriptionText={cardDescription}
-      />
     </div>
   );
 };
