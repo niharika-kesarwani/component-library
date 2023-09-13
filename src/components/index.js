@@ -11,7 +11,12 @@ import {
 } from "./Button/Button";
 import { Card } from "./Card/Card";
 import { HeadingComponents, headingCodeText } from "./Heading/Heading";
-import { Image } from "./Image/Image";
+import {
+  ImageComponent,
+  imageCodeText,
+  RoundImageComponent,
+  roundImageCodeText,
+} from "./Image/Image";
 import { TextComponents, textCodeText } from "./Text/Text";
 
 export {
@@ -30,7 +35,10 @@ export {
   Card,
   HeadingComponents,
   headingCodeText,
-  Image,
+  ImageComponent,
+  imageCodeText,
+  RoundImageComponent,
+  roundImageCodeText,
   TextComponents,
   textCodeText,
 };
