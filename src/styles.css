@@ -91,8 +91,8 @@ button {
 .content_w_sb {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "sidebar" "description" "description";
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "sidebar" "description" "description" "description";
 }
 
 @media (min-width: 768px) {
