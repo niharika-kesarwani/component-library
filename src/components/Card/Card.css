@@ -38,6 +38,12 @@
   color: #fff;
 }
 
+.text_only_card {
+  border: 1px solid lightgray;
+  padding: 30px 15px;
+  min-width: 300px;
+}
+
 .card_component {
   display: flex;
   gap: 10px;

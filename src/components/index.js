@@ -22,6 +22,8 @@ import {
   cardWithDismissCodeText,
   CardWithTextOverlayComponent,
   cardWithTextOverlayCodeText,
+  TextOnlyCardComponent,
+  textOnlyCardCodeText,
 } from "./Card/Card";
 import { Heading, HeadingComponents, headingCodeText } from "./Heading/Heading";
 import {
@@ -54,6 +56,8 @@ export {
   cardWithDismissCodeText,
   CardWithTextOverlayComponent,
   cardWithTextOverlayCodeText,
+  TextOnlyCardComponent,
+  textOnlyCardCodeText,
   Heading,
   HeadingComponents,
   headingCodeText,
