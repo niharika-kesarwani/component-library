@@ -2,6 +2,8 @@
 
 This **CSS Component Library** is a small app containing different components with their documentation in **React JS**.
 
+![Capture](https://github.com/niharika-kesarwani/component-library/assets/45658446/e09d2775-12eb-435f-a522-ebad74007c9a)
+
 ## Components
 
 1. Avatar
